@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_30"
+    android:paddingRight="@dimen/dp_30"
+    tools:context="com.demo.administrator.mustardenglish.MainActivity">
+
+     <Button
+         android:id="@+id/id_exercise_enter_btn"
+         android:text="@string/exercise_enter"
+         android:textColor="@color/pale_blue"
+         android:textSize="@dimen/sp_20"
+         android:gravity="center"
+         android:background="@drawable/bg_functionbutton_default"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_40"
+         android:layout_centerVertical="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />
+</RelativeLayout>
