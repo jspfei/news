@@ -82,11 +82,11 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
     }
     @Override
     public void nextGame(){
-        if(sentenceStrList.size()!=0){
+        if(sentenceList.size()!=0){
             sentenceStrList =null;
             shuffleStrList =null;
             gameIndex++;
-            if(gameIndex<sentenceStrList.size()){
+            if(gameIndex<sentenceList.size()){
                 setInitializationGame(gameIndex);
             }else
             {

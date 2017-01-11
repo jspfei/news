@@ -114,7 +114,7 @@ public class ExercisePresenterImpl implements ExercisePresenter {
             mExerciseView.setCurrentInputIndex(index+1);
             if((index+1) == list.size()){
                 mExerciseView.showToast("胜利！");
-              //  mExerciseView.nextGame();
+                mExerciseView.nextGame();
             }
 
         }else{
