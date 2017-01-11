@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.demo.administrator.mustardenglish.activity.ExerciseActivity;
- 
+
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
