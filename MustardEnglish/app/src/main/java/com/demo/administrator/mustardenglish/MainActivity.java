@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.demo.administrator.mustardenglish.activity.ExerciseActivity;
+ 
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         context = this;
 
     }
+
 
     private void intView() {
         findViewById(R.id.id_exercise_enter_btn).setOnClickListener(this);
