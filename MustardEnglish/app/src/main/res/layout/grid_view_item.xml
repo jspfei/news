@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:gravity="center"
     android:id="@+id/id_show_grid_view_ll"
-    android:background="@color/light_gray"
+    android:background="@drawable/gv_selector"
     android:layout_height="100dp">
     <TextView
         android:id="@+id/id_word_txt"

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.demo.administrator.mustardenglish.activity.ExerciseActivity;
-
+import com.demo.administrator.mustardenglish.activity.MagicAcademyActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.id_exercise_enter_btn:
-                Intent intent = new Intent(MainActivity.this, ExerciseActivity.class);
+                Intent intent = new Intent(MainActivity.this, MagicAcademyActivity.class);
                 startActivity(intent);
                 break;
         }
