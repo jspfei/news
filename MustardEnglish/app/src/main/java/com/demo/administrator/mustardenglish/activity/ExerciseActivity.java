@@ -103,21 +103,21 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
 
     @Override
     public void nextGame(){
-        if(sentenceList.size()!=0){
+        if(sentenceList.size()!=0 && !isGameOver){
             sentenceStrList =null;
             shuffleStrList =null;
             currentInputIndex =0 ;
             gameIndex++;
+            setCurrentNumber(gameIndex);
             isWin = false;
             if(gameIndex<sentenceList.size()){
-                setInitializationGame(gameIndex);
+                setInitializationGame(gameIndex); 
             }else
             {
                 isGameOver = true;
                 showReStartButtonVisible(isGameOver);
                 showToast(getResources().getString(R.string.next_constitution_str));
             }
-            setCurrentNumber(gameIndex);
         }
     }
     private void showReStartButtonVisible(Boolean flag){
