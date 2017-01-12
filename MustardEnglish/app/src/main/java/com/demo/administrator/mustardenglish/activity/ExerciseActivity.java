@@ -51,6 +51,9 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
     private Boolean isShowPrompt = true;
     private Button id_open_prompt;
     private Branch mBranch;
+    private Boolean isWin = false;
+    private Boolean isGameOver = false;
+    private Button id_restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +91,9 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
         id_en_area_ll = (LinearLayout) findViewById(R.id.id_en_area_ll);
         id_open_prompt=(Button)findViewById(R.id.id_open_prompt);
         id_open_prompt.setOnClickListener(this);
+        id_restart = (Button) findViewById(R.id.id_restart);
+        id_restart.setOnClickListener(this);
+        id_restart.setVisibility(View.GONE);
     }
     //初始化
     private void initData() {
@@ -102,13 +108,23 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
             shuffleStrList =null;
             currentInputIndex =0 ;
             gameIndex++;
+            isWin = false;
             if(gameIndex<sentenceList.size()){
                 setInitializationGame(gameIndex);
             }else
             {
-                showToast("结束");
+                isGameOver = true;
+                showReStartButtonVisible(isGameOver);
+                showToast(getResources().getString(R.string.next_constitution_str));
             }
             setCurrentNumber(gameIndex);
+        }
+    }
+    private void showReStartButtonVisible(Boolean flag){
+        if(flag){
+            id_restart.setVisibility(View.VISIBLE);
+        }else{
+            id_restart.setVisibility(View.GONE);
         }
     }
 
@@ -132,10 +148,15 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
     }
 
     @Override
+    public void setIsWinner(Boolean win) {
+        isWin = win;
+    }
+
+    @Override
     public void setSentenceList(List<Sentence> list) {
         sentenceList = list;
         if(sentenceList == null || sentenceList.size() == 0){
-            Toast.makeText(mContext,"没有练习的句子",Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext,getResources().getString(R.string.no_magic_str),Toast.LENGTH_SHORT).show();
             return;
         }
         setTotalNumber(sentenceList.size());
@@ -165,9 +186,17 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
         id_grid_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(!isGameOver){
+                    if(!isWin ){
+                        String text = shuffleStrList.get(i);
 
-                String text = shuffleStrList.get(i);
-                mExercisePresenter.validateSentence(sentenceStrList,text,currentInputIndex);
+                        mExercisePresenter.validateSentence(sentenceStrList,text,currentInputIndex);
+                    }else{
+                        showToast(getResources().getString(R.string.success_str));
+                    }
+                }else{
+                    showToast(getResources().getString(R.string.next_constitution_str));
+                }
             }
         });
     }
@@ -184,8 +213,19 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
             case R.id.id_open_prompt:
                 isShowEnglishPrompt();
                 break;
-
+            case R.id.id_restart:
+                restartGame();
+                break;
         }
+    }
+    private void restartGame(){
+        gameIndex= 0;
+        currentInputIndex = 0;
+        isWin = false;
+        isGameOver = false;
+        read();
+        initData();
+        showReStartButtonVisible(isGameOver);
     }
     //是否显示英语提示
     private void isShowEnglishPrompt(){

@@ -12,6 +12,7 @@ public interface ExerciseView {
     void showInputSentence(String txt);
     void setCurrentInputIndex(int i);
     void showToast(String txt);
+    void setIsWinner(Boolean win);
     void setSentenceList(List<Sentence> list);
     void nextGame();
 }

@@ -163,19 +163,19 @@
                 <TextView
                     android:id="@+id/id_show_input_txt"
                     android:layout_width="match_parent"
-                    android:text="输入文本输入文本输入文本输入文本输入文本输入文本输入文本输入文本输入文本"
+                    android:text=""
                     android:textSize="@dimen/sp_18"
                     android:textColor="@color/white"
                     android:gravity="center"
-                    android:paddingTop="@dimen/dp_5"
-                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
                     android:background="@color/black"
                     android:singleLine="false"
                     android:layout_height="wrap_content" />
 
                 <RelativeLayout
                     android:id="@+id/id_input_key_rl"
-                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_25"
                     android:layout_width="match_parent"
                     android:background="@color/black"
                     android:orientation="vertical"
@@ -185,7 +185,7 @@
                     <GridView
                         android:id="@+id/id_grid_view"
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
+                        android:layout_height="wrap_content"
                         android:numColumns="4"
                         android:verticalSpacing="@dimen/dp_10"
                         android:horizontalSpacing="@dimen/dp_5"
@@ -228,6 +228,16 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/id_restart"
+            android:text="@string/restart_game"
+            android:textColor="@color/DarkGray"
+            android:background="@drawable/round_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
 </RelativeLayout>

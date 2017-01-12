@@ -100,12 +100,12 @@ public class ExercisePresenterImpl implements ExercisePresenter {
 
     @Override
     public void validateSentence(List<String> list, String txt ,int index) {
-        if(txt .equals( list.get(index))){
+        if(list.get(index)!=null && txt.equals( list.get(index))){
             mExerciseView.showInputSentence(" "+txt);
             mExerciseView.setCurrentInputIndex(index+1);
             if((index+1) == list.size()){
                 mExerciseView.showToast(context.getResources().getString(R.string.success_str));
-
+                mExerciseView.setIsWinner(true);
                 // 延迟2秒
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -115,7 +115,10 @@ public class ExercisePresenterImpl implements ExercisePresenter {
                 },2000);
             }
 
-        }else{
+        }else if(list.get(index)==null){
+            Log.d("TAG","---------------null");
+        }
+        else{
             mExerciseView.showToast(context.getResources().getString(R.string.again_str));
         }
     }

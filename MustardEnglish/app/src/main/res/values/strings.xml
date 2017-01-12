@@ -8,6 +8,9 @@
     <string name="close_prompt">隐藏英文</string>
     <string name="success_str">胜利！</string>
     <string name="again_str">再来！</string>
+    <string name="no_magic_str">没有魔法宝典</string>
+    <string name="next_constitution_str">开启新章程</string>
+    <string name="restart_game">重新开始</string>
     <string-array name="branch_title">
         <item>在家中</item>
 
@@ -18,5 +21,6 @@
         <item>从回家到就寝</item>
         <item>休息日</item>
         <item>送礼物</item>
+        <item>生活习惯</item>
     </string-array>
 </resources>
