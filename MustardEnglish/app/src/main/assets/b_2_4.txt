@@ -1,0 +1,37 @@
+Would you like to go to a movie?#你想去看电影吗?
+Sure, I'd love to.#当然，我很想去。
+What do you say to going to a movie?#你想去看电影吗?
+What's on tonight?#今天晚上放什么电影?
+What's playing tonight?#今天晚上放什么电影?
+What are you showing tonight?#今天晚上放什么电影?
+What movie do you want to see?#你想看什么电影?
+I want to see...#我想看《××》
+Where is... playing?#哪儿演《××》?
+How long is... playing?#《××》演到什么时候?
+How long will... play?#《××》演到什么时候?
+Who is in this movie?#这部电影是谁演的?
+How long does it last?#演多长时间?
+How long will it last?#演多长时间?
+How long is it?#演多长时间?
+What time is the next showing?#下一场几点开演?
+When is the next showing?#下一场几点开演?
+What time will it be over?#几点演完?
+What time will it end?#几点演完?
+Two, please.#我买两张成人票。
+Two tickets, please.#我买两张成人票。
+Two adults, please.#我买两张成人票。
+I can't see because of the person in front of me.#前边的人挡着，我看不见。
+That person is blocking my view.#前边的人挡着，我看不见。
+That person is in my way.#前边的人挡着，我看不见。
+We are way in the back, aren't we?#我们怎么坐得这么靠后呀?
+Let's sit closer up front.#我们坐到前面的座位上吧。
+That was interesting, wasn't it?#真太有意思了，是不是?
+That was interesting, wasn't it?#真太有意思了，是不是?
+It sure was.#确实。
+That was boring, wasn't it?#这电影真没劲。
+That was dull, wasn't it?#这电影真没劲。
+I was moved.#太让人感动了。
+How was the ballet?#芭蕾舞怎么样?
+I was moved.#太让人感动了。
+It touched me.#太让人感动了。
+It was a touching movie.#这是一部感人的电影。

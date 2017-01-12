@@ -13,6 +13,7 @@
     <string name="restart_game">重新开始</string>
     <string-array name="branch_title">
         <item>在家中</item>
+        <item>享受余暇时间</item>
 
     </string-array>
 
@@ -22,5 +23,12 @@
         <item>休息日</item>
         <item>送礼物</item>
         <item>生活习惯</item>
+        <item>理财</item>
+    </string-array>
+    <string-array name="b_2"><!-- 对一资源名 b_2_1 开始-->
+        <item>邀请友人</item>
+        <item>订计划</item>
+        <item>出门的时候</item>
+        <item>看电影</item>
     </string-array>
 </resources>

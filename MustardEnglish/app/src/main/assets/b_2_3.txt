@@ -1,0 +1,25 @@
+Are you ready?#准备好了吗?
+No, not yet.#还没呢。
+Ready yet?#还没呢。
+Are you all set?#好了吗?
+Ready.#准备好了。
+I'm ready.#准备好了。
+I'm all set.#准备好了。
+I'm not ready.#还没准备好呢。
+Ready.#准备好了。
+What time shall we leave?#我们什么时候出发?
+What time shall we leave?#我们什么时候出发。
+In about ten minutes.#大约10分钟以后。
+What time do you want to leave?#你想几点走?
+What time do we leave?#几点出门?
+What time are we taking off?#我们几点走?
+What time do we arrive?#我们几点能到?
+When do we get there?#我们几点能到?
+Let's get going.#那，我们走吧。
+Let's get going.#那我们走吧。
+I'll be ready in five minutes.#我5分钟就好。
+Let's go.#走吧
+Let's take off.#走吧
+Shall we go?#我们可以走了吗?
+Okay, let's go.#好了，走吧。
+Let's hit the road!#开路
