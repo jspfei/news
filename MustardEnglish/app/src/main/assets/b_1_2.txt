@@ -1,6 +1,5 @@
 I'm home.#我回来了。
-I'm home.# 我回来了。
-Welcome back.# 你回来了。
+Welcome back.#你回来了。
 I'm back!#我回来了。
 Welcome home!#你回来了。
 Welcome back!#你回来了。
@@ -8,153 +7,153 @@ Did you have a good time?#今天过得愉快吗?
 How did it go today?#今天怎么样?
 How was your day?#今天怎么样?
 Can I go out to play?#我可以出去玩儿会儿吗?
-Can I go out to play?# 我可以出去玩儿会儿吗?
-After you finish your homework.# 写完作业再去吧。
+Can I go out to play?#我可以出去玩儿会儿吗?
+After you finish your homework.#写完作业再去吧。
 I'm hungry.#我饿了。
-I'm hungry.# 我饿了。
-We have some snacks.# 吃点儿点心吧。
+I'm hungry.#我饿了。
+We have some snacks.#吃点儿点心吧。
 Where are the snacks?#点心在哪儿?
-Where are the snacks?# 点心在哪儿?
-They're in the cupboard.# 在碗橱里。
+Where are the snacks?#点心在哪儿?
+They're in the cupboard.#在碗橱里。
 I'm going to cram school now.#我去补习学校了啊。
-I'm going to cram school now.# 我去补习学校了啊。
-Call when you finish.# 下课后来个电话。
+I'm going to cram school now.#我去补习学校了啊。
+Call when you finish.#下课后来个电话。
 May I have my allowance?#能给我点儿零花钱吗?
-May I have my allowance?# 能给我点儿零花钱吗?
-What do you want to buy?# 你要买什么呀?
+May I have my allowance?#能给我点儿零花钱吗?
+What do you want to buy?#你要买什么呀?
 I'm tired.#真累啊!
-I'm exhausted.# 我精疲力尽了
+I'm exhausted.#我精疲力尽了
 I'm pooped.#真累啊!
 What would you like for dinner?#晚饭你想吃什么?
-What would you like for dinner?# 晚饭你想吃什么?
-How about steak?# 吃牛排怎么样?
-What do you want for dinner?# 晚饭吃什么?
-What do you want to eat for dinner?# 晚饭你想吃点什么?
-Would you help me set the table?# 你能帮我准备餐具吗?
-Would you help me set the table?# 你能帮我准备餐具吗?
-I'd be happy to.# 乐意之至。
-Help me set up the table, will you?# 你能帮我把餐具摆好吗?
+What would you like for dinner?#晚饭你想吃什么?
+How about steak?#吃牛排怎么样?
+What do you want for dinner?#晚饭吃什么?
+What do you want to eat for dinner?#晚饭你想吃点什么?
+Would you help me set the table?#你能帮我准备餐具吗?
+Would you help me set the table?#你能帮我准备餐具吗?
+I'd be happy to.#乐意之至。
+Help me set up the table, will you?#你能帮我把餐具摆好吗?
 What should I make for dinner?#晚饭做什么好呢?
 What should I whip up for dinner?#晚饭做什么好呢?
 What should I cook for dinner?#晚饭做什么好呢?
 What should I fix for dinner?#晚饭做什么好呢?
 It's good to be home.#还是家好哇。
-There's no place like home.# 还是家好哇。
+There's no place like home.#还是家好哇。
 It feels so good to be home.#还是家好哇。
 Would you run to the store?#你能不能赶紧去趟商店?
-Would you run to the store?# 你能不能快点儿去趟商店?
-In just a minute.# 稍等一下。
+Would you run to the store?#你能不能快点儿去趟商店?
+In just a minute.#稍等一下。
 The bath is ready.#洗澡水烧好了。
-It's been a long day.# 今天真累呀!
-The bath is ready.# 洗澡水烧好了。
+It's been a long day.#今天真累呀!
+The bath is ready.#洗澡水烧好了。
 I'm taking a shower.#我要冲个澡。
 I'm going to take a shower.#我要冲个澡。
 Is dinner ready?#晚饭做好了吗?
-Is dinner ready?# 晚饭好了吗?
-Not yet.# 还没呢。
-Is it time for dinner yet?# 该吃晚饭了吧?
-Have you made dinner?# 晚饭做好了吗?
+Is dinner ready?#晚饭好了吗?
+Not yet.#还没呢。
+Is it time for dinner yet?#该吃晚饭了吧?
+Have you made dinner?#晚饭做好了吗?
 Mom, what's for dinner tonight?#妈妈，今天晚饭吃什么?
 Mom, what did you make for dinner?#妈妈，今天晚饭吃什么?
 Mom, what did you fix for dinner?#妈妈，今天晚饭吃什么?
 What's for dinner?#晚饭吃什么?
-What's for dinner?# 晚饭吃什么?
-Salisbury steak.# 吃汉堡肉饼。
-Great!# 太棒了。
+What's for dinner?#晚饭吃什么?
+Salisbury steak.#吃汉堡肉饼。
+Great!#太棒了。
 Today, we're having curry.#今天吃咖哩饭。
 We're having curry today.#今天吃咖哩饭。
 How soon can you get it ready?#还要多久才能做好呀?
-How soon can you get it ready?# 还要多久才能做好呀?
-In about five more minutes.# 再有5分钟吧。
+How soon can you get it ready?#还要多久才能做好呀?
+In about five more minutes.#再有5分钟吧。
 When will it be ready?#还要多久才能做好呀?
 How soon will it be done?#还要多久才能做好呀?
 Let's eat.#我吃了啊。
-Shall we begin?# 可以吃了吗?
+Shall we begin?#可以吃了吗?
 Please go ahead.#请先吃吧。
 Please help yourself.#请先吃吧。
 This knife cuts well, doesn't it?#这把刀真快呀!
-This knife cuts well, doesn't it?# 这刀挺好使的，是不是?
-It sure does.# 真挺快的。
+This knife cuts well, doesn't it?#这刀挺好使的，是不是?
+It sure does.#真挺快的。
 The water is boiling!#水开啦!
-The water is boiling!# 水开啦!
-OK.# 知道啦!
+The water is boiling!#水开啦!
+OK.#知道啦!
 Come and get it!#开饭啦!
-It's time for dinner!# 该吃晚饭啦!
-Breakfast/Lunch/Dinner is ready!# 早饭/午饭/晚饭好了啊!
+It's time for dinner!#该吃晚饭啦!
+Breakfast/Lunch/Dinner is ready!#早饭/午饭/晚饭好了啊!
 It's time to eat.#该吃饭啦!
-It's time to eat.# 该吃饭啦!
-Finally.# 终于吃上饭喽!
+It's time to eat.#该吃饭啦!
+Finally.#终于吃上饭喽!
 I'm coming.#这就来啦!
-I'll be right there.# 我马上就去。
-I'm on my way.
+I'll be right there.#我马上就去。
+I'm on my way.#我马上就去。
 Did you wash your hands well?#手洗干净了吗?
-Did you wash your hands well?# 手洗干净了吗?
-Yes.# 洗干净了。
+Did you wash your hands well?#手洗干净了吗?
+Yes.#洗干净了。
 Don't spill it!#别弄洒了。
 Don't tip it over.#别弄洒了。
 Eat all of your vegetables.#把碗里的菜吃光。
 Finish your vegetables.#把碗里的菜吃光。
 Finish up your vegetables.#把碗里的菜吃光。
 Finish up your plate.#把饭吃光。
-Finish up your plate.# 把碗里的饭吃干净。
-I'm trying to.# 这不吃着呢嘛。
+Finish up your plate.#把碗里的饭吃干净。
+I'm trying to.#这不吃着呢嘛。
 I don't like asparagus.#我不喜欢吃芦笋。
-I don't like asparagus.# 我不喜欢吃芦笋。
-Don't be picky.# 不许挑食。
-It was very delicious.# Thank you.#谢谢您的款待。
-It was a wonderful dinner.# 谢谢您丰盛的晚餐。
+I don't like asparagus.#我不喜欢吃芦笋。
+Don't be picky.#不许挑食。
+It was very delicious.Thank you.#谢谢您的款待。
+It was a wonderful dinner.#谢谢您丰盛的晚餐。
 Would you clear the table?#能帮我收拾盘子吗?
 Would you put the dishes away?#能帮我收拾盘子吗?
-Do the dishes!# 把盘子洗了。 
-I will.# 就去洗。
-Do the dishes!# 把盘子洗了。
-It's not my turn.# 今天不该我洗。
-Wash the dishes!# 把盘子洗了。
-I'll dry the dishes.# 我擦盘子。
-What are you doing?# 你干什么呢?
-I'm watching TV.# 我看电视呢。
+Do the dishes!#把盘子洗了。 
+I will.#就去洗。
+Do the dishes!#把盘子洗了。
+It's not my turn.#今天不该我洗。
+Wash the dishes!#把盘子洗了。
+I'll dry the dishes.#我擦盘子。
+What are you doing?#你干什么呢?
+I'm watching TV.#我看电视呢。
 Are there any good programs on TV?#有什么好看的节目吗?
-Are there any good programs on TV?# 有什么好看的节目吗?
-No, not today.# 没有，今天没什么好看的。
+Are there any good programs on TV?#有什么好看的节目吗?
+No, not today.#没有，今天没什么好看的。
 Nomo is on TV.#野茂上电视了。
 What's on Channel 8?#8频道演什么呢?
 Would you change the channel?#能不能帮我换个台?
 Would you switch the channel?#能不能帮我换个台?
 Would you change the station?#能不能帮我换个台?
 I want to watch more TV.#我还想看电视。
-I want to watch more TV.# 我还想看电视。
-You've watched enough for tonight.# 今晚你看得够多的了。
+I want to watch more TV.#我还想看电视。
+You've watched enough for tonight.#今晚你看得够多的了。
 Let's spread out the futon.#铺床吧。
-Let's get the futon out.# 把被子拿出来吧。 
-I'm sleepy.# 我困了。
-Why don't you take a nap?# 你干嘛不睡午觉?
-I'm drowsy.# *drowsy是表示困得睁不开眼。
+Let's get the futon out.#把被子拿出来吧。 
+I'm sleepy.#我困了。
+Why don't you take a nap?#你干嘛不睡午觉?
+I'm drowsy.#*drowsy是表示困得睁不开眼。
 Did you do your homework?#作业做了吗?
-Did you finish your homework?#作业做了吗?#
-Study hard.# 好好学习。
-I am.# 好好学着呢。
+Did you finish your homework?#作业做了吗?
+Study hard.#好好学习。
+I am.#好好学着呢。
 Hurry up and go to sleep.#快点睡觉。 
-Enough with your video games.# 游戏玩够了吧。
-I can't quit now.# 正好玩着呢。
+Enough with your video games.#游戏玩够了吧。
+I can't quit now.#正好玩着呢。
 Make sure you brush your teeth.#一定要刷牙噢。
-Make sure you brush your teeth.# 一定要刷牙噢。
-I will.# 一定刷。 
-Are you ready for tomorrow?# 明天的东西都准备好了吗?
-No, not yet.# 没有，还没准备好呢。 
-I'm going to take a bath.# 我去洗个澡。
-Make sure you wash up well.# 好好洗洗啊。 
-Time to go to sleep.# 该睡觉了。
-Just a minute.# 再等一下。 
-You left the TV on.# 电视还开着呢。
-Sorry about that.# 对不起，我忘了关。
-You forgot to turn the TV off.# 你忘了关电视啦。 
-Don't leave your stuff here.# 别把你的东西都摊在这儿。
-I won't.# 知道了。
+Make sure you brush your teeth.#一定要刷牙噢。
+I will.#一定刷。 
+Are you ready for tomorrow?#明天的东西都准备好了吗?
+No, not yet.#没有，还没准备好呢。 
+I'm going to take a bath.#我去洗个澡。
+Make sure you wash up well.#好好洗洗啊。 
+Time to go to sleep.#该睡觉了。
+Just a minute.#再等一下。 
+You left the TV on.#电视还开着呢。
+Sorry about that.#对不起，我忘了关。
+You forgot to turn the TV off.#你忘了关电视啦。 
+Don't leave your stuff here.#别把你的东西都摊在这儿。
+I won't.#知道了。
 I set the alarm clock for 8:00.#把闹钟定在8点了。
 I set it for 8:00.#把闹钟定在8点了。 
-Wake me up at seven tomorrow.# 明天7点叫醒我。
-Sure thing.# 知道了。
-Good night.# 晚安。
-Sweet dreams.# 做个好梦。
-Don't let the bedbugs bite.# 晚安。 
-Have pleasant dreams.#
+Wake me up at seven tomorrow.#明天7点叫醒我。
+Sure thing.#知道了。
+Good night.#晚安。
+Sweet dreams.#做个好梦。
+Don't let the bedbugs bite.#晚安。 
+Have pleasant dreams.#做个好梦。

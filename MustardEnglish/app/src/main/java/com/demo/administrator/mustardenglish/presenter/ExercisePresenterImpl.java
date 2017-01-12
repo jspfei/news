@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.demo.administrator.mustardenglish.R;
 import com.demo.administrator.mustardenglish.bean.Sentence;
 import com.demo.administrator.mustardenglish.utils.StringUtil;
 import com.demo.administrator.mustardenglish.view.ExerciseView;
@@ -86,16 +87,6 @@ public class ExercisePresenterImpl implements ExercisePresenter {
              mExerciseView.setSentenceList(values);
         }
     }
-    @Override
-    public List<Sentence> getSentenceList() {
-        List<Sentence> sentenceList = new ArrayList<Sentence>();
-        Sentence sentence = new Sentence();
-        sentence.setId(1);
-        sentence.setCn("这个句子多了一个字。");
-        sentence.setEn("There is one word too many in this sentence.");
-        sentenceList.add(sentence);
-        return sentenceList;
-    }
 
     //将 句子中的英文句子 解析成单个单词返回 List
 
@@ -113,7 +104,7 @@ public class ExercisePresenterImpl implements ExercisePresenter {
             mExerciseView.showInputSentence(" "+txt);
             mExerciseView.setCurrentInputIndex(index+1);
             if((index+1) == list.size()){
-                mExerciseView.showToast("胜利！");
+                mExerciseView.showToast(context.getResources().getString(R.string.success_str));
 
                 // 延迟2秒
                 new Handler().postDelayed(new Runnable() {
@@ -122,23 +113,10 @@ public class ExercisePresenterImpl implements ExercisePresenter {
                         mExerciseView.nextGame();
                     }
                 },2000);
-               /* TimerTask task = new TimerTask(){
-
-                    public void run(){
-
-                        //execute the task
-
-                    }
-
-                };
-
-                Timer timer = new Timer();
-
-                timer.schedule(task, delay);*/
             }
 
         }else{
-            mExerciseView.showToast("输入错误！");
+            mExerciseView.showToast(context.getResources().getString(R.string.again_str));
         }
     }
 

@@ -4,7 +4,10 @@
     <string name="cn_label">中文：</string>
     <string name="en_label">英文：</string>
     <string name="next_game">下一关</string>
-
+    <string name="open_prompt">显示英文</string>
+    <string name="close_prompt">隐藏英文</string>
+    <string name="success_str">胜利！</string>
+    <string name="again_str">再来！</string>
     <string-array name="branch_title">
         <item>在家中</item>
 
@@ -13,5 +16,7 @@
     <string-array name="b_1">
         <item>从起床到出门</item>
         <item>从回家到就寝</item>
+        <item>休息日</item>
+        <item>送礼物</item>
     </string-array>
 </resources>

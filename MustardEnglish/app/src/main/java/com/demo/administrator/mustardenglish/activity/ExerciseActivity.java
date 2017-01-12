@@ -3,16 +3,20 @@ package com.demo.administrator.mustardenglish.activity;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.demo.administrator.mustardenglish.R;
 import com.demo.administrator.mustardenglish.adapter.MyGridAdapter;
+import com.demo.administrator.mustardenglish.bean.Branch;
 import com.demo.administrator.mustardenglish.bean.Sentence;
 import com.demo.administrator.mustardenglish.presenter.ExercisePresenter;
 import com.demo.administrator.mustardenglish.presenter.ExercisePresenterImpl;
@@ -22,10 +26,9 @@ import com.demo.administrator.mustardenglish.widget.ButtonM;
 import java.util.Collections;
 import java.util.List;
 
-public class ExerciseActivity extends AppCompatActivity implements ExerciseView {
+public class ExerciseActivity extends AppCompatActivity implements ExerciseView ,View.OnClickListener{
 
     private ExercisePresenter mExercisePresenter;
-
     private TextView id_cn_txt,id_en_txt,id_show_input_txt;
     private RelativeLayout id_input_key_rl;
     private List<Sentence> sentenceList = null;
@@ -39,18 +42,28 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
     private int gameIndex = 0 ;//列表总index
     private Button nextBtn;
 
+    private ImageButton id_back_ib;
+    private TextView id_title_tv;
+    private TextView id_number_current_tv;
+    private TextView id_number_total_tv;
+
+    private LinearLayout id_en_area_ll;//英语显示区
+    private Boolean isShowPrompt = true;
+    private Button id_open_prompt;
+    private Branch mBranch;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        res_id =  getIntent().getStringExtra("resources_id"); //"b_1"
+        mBranch =(Branch) getIntent().getSerializableExtra("subbranch"); //"b_1"
+        res_id = mBranch.getBranch_class();
 
         setContentView(R.layout.activity_exercise);
         mContext = this;
         mExercisePresenter = new ExercisePresenterImpl(this,mContext);
-        read();
         initView();
+        read();
         initData();
-        showWords();
     }
 
     private void read(){
@@ -65,21 +78,23 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
 
         id_grid_view = (GridView) findViewById(R.id.id_grid_view);
         nextBtn = (Button) findViewById(R.id.id_next);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextGame();
-            }
-        });
+        nextBtn.setOnClickListener(this);
+        id_back_ib = (ImageButton) findViewById(R.id.id_back_ib);
+        id_back_ib.setOnClickListener(this);
+
+        id_title_tv = (TextView) findViewById(R.id.id_title_tv);
+        id_number_current_tv = (TextView) findViewById(R.id.id_number_current_tv);
+        id_number_total_tv = (TextView) findViewById(R.id.id_number_total_tv);
+        id_en_area_ll = (LinearLayout) findViewById(R.id.id_en_area_ll);
+        id_open_prompt=(Button)findViewById(R.id.id_open_prompt);
+        id_open_prompt.setOnClickListener(this);
     }
-
-
+    //初始化
     private void initData() {
-
+        setTitle(mBranch.getBranch_title());
+        isShowEnglishPrompt();
     }
-    private void showWords(){
 
-    }
     @Override
     public void nextGame(){
         if(sentenceList.size()!=0){
@@ -93,6 +108,7 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
             {
                 showToast("结束");
             }
+            setCurrentNumber(gameIndex);
         }
     }
 
@@ -110,7 +126,9 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
 
     @Override
     public void showToast(String txt) {
-        Toast.makeText(mContext,txt,Toast.LENGTH_SHORT).show();
+        Toast toast =  Toast.makeText(mContext,txt,Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.TOP,0,100);
+        toast.show();
     }
 
     @Override
@@ -120,13 +138,22 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
             Toast.makeText(mContext,"没有练习的句子",Toast.LENGTH_SHORT).show();
             return;
         }
+        setTotalNumber(sentenceList.size());
         gameIndex = 0;
         setInitializationGame(gameIndex);
     }
+    private void setTitle(String value){
+        id_title_tv .setText(value);
+
+    }
+    private void setCurrentNumber(int i){
+        id_number_current_tv .setText(""+i);
+    }
+    private void setTotalNumber(int i){
+        id_number_total_tv .setText(""+i);
+    }
     private void setInitializationGame(int currentId){
-
         currentSentence = sentenceList.get(currentId);
-
         id_cn_txt.setText(currentSentence.getCn());
         id_en_txt.setText(currentSentence.getEn());
         id_show_input_txt.setText("");
@@ -143,5 +170,32 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
                 mExercisePresenter.validateSentence(sentenceStrList,text,currentInputIndex);
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.id_back_ib:
+                finish();
+                break;
+            case R.id.id_next:
+                nextGame();
+                break;
+            case R.id.id_open_prompt:
+                isShowEnglishPrompt();
+                break;
+
+        }
+    }
+    //是否显示英语提示
+    private void isShowEnglishPrompt(){
+        if(isShowPrompt){
+            id_en_area_ll.setVisibility(View.VISIBLE);
+            id_open_prompt.setText(getResources().getString(R.string.close_prompt));
+        }else{
+            id_en_area_ll.setVisibility(View.GONE);
+            id_open_prompt.setText(getResources().getString(R.string.open_prompt));
+        }
+        isShowPrompt = !isShowPrompt;
     }
 }

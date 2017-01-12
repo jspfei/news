@@ -14,8 +14,6 @@ import java.util.List;
 public interface ExercisePresenter {
 
     void readAssetsTxt(String filename);
-    List<Sentence> getSentenceList();
-
     List<String> getSentenceStrList(Sentence sentence);
 
     void validateSentence(List<String> list, String txt,int index);

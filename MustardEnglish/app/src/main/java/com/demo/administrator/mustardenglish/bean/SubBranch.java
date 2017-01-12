@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by admin on 2017/1/11.
  */
 
-public class Branch implements Serializable {
+public class SubBranch implements Serializable {
     private int branch_id; //分类ID
     private String branch_title;//分类名称
     private String branch_class;//分类类别 b_1

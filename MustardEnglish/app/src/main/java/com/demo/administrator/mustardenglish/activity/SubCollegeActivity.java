@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.demo.administrator.mustardenglish.R;
 import com.demo.administrator.mustardenglish.adapter.BranchAdapter;
@@ -23,11 +25,18 @@ public class SubCollegeActivity extends Activity {
     private BranchAdapter branchAdapter = null;
     private String branch_class;
     private List<Branch> branchList;
+    private Branch mBranch;
+    private TextView id_branch_title;
+    private ImageButton id_back_ib;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_magic_academy);
-        branch_class = getIntent().getStringExtra("branch_class"); //"b_1"
+        mBranch =(Branch) getIntent().getSerializableExtra("branch"); //"b_1"
+        branch_class = mBranch.getBranch_class();
+
+        id_branch_title = (TextView)findViewById(R.id.id_branch_title);
+        id_branch_title.setText(mBranch.getBranch_title());
 
         id_title_class_list = (ListView) findViewById(R.id.id_title_class_list);
         branchList = getBranchData();
@@ -38,10 +47,21 @@ public class SubCollegeActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Branch branch = branchList.get(position);
                 Intent intent = new Intent(SubCollegeActivity.this,ExerciseActivity.class);
-                intent.putExtra("resources_id", branch.getBranch_class());//assets 下资源ID
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("subbranch", branch);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
+
+        id_back_ib = (ImageButton) findViewById(R.id.id_back_ib);
+        id_back_ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
     private List<Branch> getBranchData(){
         List<Branch> data = new ArrayList<Branch>();

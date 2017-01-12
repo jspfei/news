@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.demo.administrator.mustardenglish.R;
@@ -22,6 +23,7 @@ public class MagicAcademyActivity extends Activity {
     private ListView id_title_class_list;
     private BranchAdapter branchAdapter = null;
     private List<Branch> branchList;
+    private ImageButton id_back_ib;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -36,10 +38,20 @@ public class MagicAcademyActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Branch branch = branchList.get(position);
                 Intent intent = new Intent(MagicAcademyActivity.this,SubCollegeActivity.class);
-                intent.putExtra("branch_class", branch.getBranch_class());
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("branch", branch);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
+        id_back_ib = (ImageButton) findViewById(R.id.id_back_ib);
+        id_back_ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
     private List<Branch> getBranchData(){
         List<Branch> data = new ArrayList<Branch>();
