@@ -2,6 +2,7 @@ package com.demo.administrator.mustardenglish.presenter;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.LinearLayout;
@@ -48,8 +49,7 @@ public class ExercisePresenterImpl implements ExercisePresenter {
          * 运行在UI线程中，在调用doInBackground()之前执行
          */
         @Override
-        protected void onPreExecute() {
-            Toast.makeText(context,"开始执行",Toast.LENGTH_SHORT).show();
+        protected void onPreExecute() {//Toast.makeText(context,"开始执行",Toast.LENGTH_SHORT).show();
         }
         /**
          * 后台运行的方法，可以运行非UI线程，可以执行耗时的方法
@@ -114,7 +114,27 @@ public class ExercisePresenterImpl implements ExercisePresenter {
             mExerciseView.setCurrentInputIndex(index+1);
             if((index+1) == list.size()){
                 mExerciseView.showToast("胜利！");
-                mExerciseView.nextGame();
+
+                // 延迟2秒
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mExerciseView.nextGame();
+                    }
+                },2000);
+               /* TimerTask task = new TimerTask(){
+
+                    public void run(){
+
+                        //execute the task
+
+                    }
+
+                };
+
+                Timer timer = new Timer();
+
+                timer.schedule(task, delay);*/
             }
 
         }else{

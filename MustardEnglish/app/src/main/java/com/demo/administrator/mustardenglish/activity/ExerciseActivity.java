@@ -85,6 +85,7 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
         if(sentenceList.size()!=0){
             sentenceStrList =null;
             shuffleStrList =null;
+            currentInputIndex =0 ;
             gameIndex++;
             if(gameIndex<sentenceList.size()){
                 setInitializationGame(gameIndex);
