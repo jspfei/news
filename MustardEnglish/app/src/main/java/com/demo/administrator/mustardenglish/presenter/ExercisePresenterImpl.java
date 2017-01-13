@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.demo.administrator.mustardenglish.R;
 import com.demo.administrator.mustardenglish.bean.Sentence;
+import com.demo.administrator.mustardenglish.handler.AsyncReadTxtHandler;
+import com.demo.administrator.mustardenglish.handler.SentenceDataHandler;
 import com.demo.administrator.mustardenglish.utils.StringUtil;
 import com.demo.administrator.mustardenglish.view.ExerciseView;
 
@@ -38,64 +40,19 @@ public class ExercisePresenterImpl implements ExercisePresenter {
 
     @Override
     public void readAssetsTxt(String filename) {
-        ReadTxtTask readTxtTask = new ReadTxtTask(context);
-        readTxtTask.execute(filename);
-    }
-    class ReadTxtTask extends AsyncTask<String,Void,List<Sentence>> {
-        private Context context;
-        ReadTxtTask(Context context){
-            this.context = context;
-        }
-        /**
-         * 运行在UI线程中，在调用doInBackground()之前执行
-         */
-        @Override
-        protected void onPreExecute() {//Toast.makeText(context,"开始执行",Toast.LENGTH_SHORT).show();
-        }
-        /**
-         * 后台运行的方法，可以运行非UI线程，可以执行耗时的方法
-         */
-        @Override
-        protected List<Sentence>  doInBackground(String... params) {
-            List<Sentence> sentenceList = new ArrayList<Sentence>();
-            try{
-                InputStream inputStream = context.getResources().getAssets().open(params[0]+".txt");
-                InputStreamReader isReadr = new InputStreamReader(inputStream,"gbk");
-                BufferedReader reader = new BufferedReader(isReadr);
-                String out = "";
-                int index = 0;
-                while((out=reader.readLine())!=null){
-                     // Log.d("读取到的文件信息:",out);
-                    String[] outs = out.split("#");
-                    Sentence sentence =new Sentence();
-                    sentence.setId(index);
-                    sentence.setEn(outs[0]);
-                    sentence.setCn(outs[1]);
-                    sentenceList.add(sentence);
-
-                }
-            }catch (IOException e){
-                e.printStackTrace();
+        //异步加载数据
+        AsyncReadTxtHandler asyncReadTxtHandler =  new AsyncReadTxtHandler(context, new AsyncReadTxtHandler.CallBackListener() {
+            @Override
+            public void callBack(List<Sentence> values) {
+                mExerciseView.setSentenceList(values);
             }
-            return sentenceList;
-        }
-        /**
-         * 运行在ui线程中，在doInBackground()执行完毕后执行
-         */
-        @Override
-        protected void onPostExecute(List<Sentence>  values) {
-             mExerciseView.setSentenceList(values);
-        }
+        });
+        asyncReadTxtHandler.readAssetsTxt(filename);
     }
-
     //将 句子中的英文句子 解析成单个单词返回 List
-
     @Override
     public List<String> getSentenceStrList(Sentence sentence) {
-
-        List<String> data = StringUtil.splitSentence(sentence.getEn());
-
-        return data;
+        return  SentenceDataHandler.getSentenceStrList(sentence);
     }
 
     @Override
@@ -125,12 +82,6 @@ public class ExercisePresenterImpl implements ExercisePresenter {
 
     @Override
     public   List<String>  shuffleSentenceList(List<String> list) {
-        List<String> list1 = new ArrayList<String>();
-        for(String str:list){
-            list1.add(str);
-        }
-        Collections.shuffle(list1);
-
-        return list1;
+        return SentenceDataHandler.shuffleSentenceList(list);
     }
 }

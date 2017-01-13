@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.demo.administrator.mustardenglish.activity.ExerciseActivity;
 import com.demo.administrator.mustardenglish.activity.MagicAcademyActivity;
+import com.demo.administrator.mustardenglish.activity.MagicFightingActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void intView() {
         findViewById(R.id.id_exercise_enter_btn).setOnClickListener(this);
+        findViewById(R.id.id_magic_fight_btn).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.id_exercise_enter_btn:
                 Intent intent = new Intent(MainActivity.this, MagicAcademyActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.id_magic_fight_btn:
+                Intent intent1 = new Intent(MainActivity.this, MagicFightingActivity.class);
+                startActivity(intent1);
                 break;
         }
     }

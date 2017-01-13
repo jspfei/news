@@ -111,7 +111,7 @@ public class ExerciseActivity extends AppCompatActivity implements ExerciseView 
             setCurrentNumber(gameIndex);
             isWin = false;
             if(gameIndex<sentenceList.size()){
-                setInitializationGame(gameIndex); 
+                setInitializationGame(gameIndex);
             }else
             {
                 isGameOver = true;

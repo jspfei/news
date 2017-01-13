@@ -5,14 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_gray"
-    android:gravity="center"
     android:paddingLeft="@dimen/dp_30"
     android:paddingRight="@dimen/dp_30"
+    android:orientation="vertical"
     tools:context="com.demo.administrator.mustardenglish.MainActivity">
 
      <Button
          android:id="@+id/id_exercise_enter_btn"
          android:text="@string/exercise_enter"
+         android:textColor="@color/pale_blue"
+         android:textSize="@dimen/sp_20"
+         android:gravity="center"
+         android:background="@drawable/bg_functionbutton_default"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_40"
+         android:layout_marginBottom="93dp"
+         android:layout_above="@+id/id_magic_fight_btn"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />
+
+     <Button
+         android:id="@+id/id_magic_fight_btn"
+         android:text="@string/magic_fight"
          android:textColor="@color/pale_blue"
          android:textSize="@dimen/sp_20"
          android:gravity="center"

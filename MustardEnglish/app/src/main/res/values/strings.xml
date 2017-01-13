@@ -11,6 +11,8 @@
     <string name="no_magic_str">没有魔法宝典</string>
     <string name="next_constitution_str">开启新章程</string>
     <string name="restart_game">重新开始</string>
+    <string name="magic_fight">魔法战斗</string>
+    <string name="monster_die_str">怪物死亡</string>
     <string-array name="branch_title">
         <item>在家中</item>
         <item>享受余暇时间</item>

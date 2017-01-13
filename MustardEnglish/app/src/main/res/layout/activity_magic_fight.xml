@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            style="@style/roomRatingBar"
+            android:id="@+id/id_monster_blood"
+            android:rating="5"
+            android:stepSize="1"
+            android:numStars="8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <RelativeLayout
+            android:layout_below="@+id/id_monster_blood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/id_monster_iv"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/monster"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_5"
+          android:gravity="center"
+        android:layout_height="0dp">
+
+          <ScrollView
+              android:id="@+id/id_magic_area"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/id_magic_txt_label_tv"
+                      android:textSize="@dimen/sp_18"
+                      android:text=""
+                      android:textColor="@color/white"
+                      android:gravity="center_horizontal"
+                      android:singleLine="false"
+                      android:visibility="visible"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+
+              </LinearLayout>
+          </ScrollView>
+
+          <ImageView
+              android:id="@+id/id_fire_iv"
+              android:src="@drawable/fire"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" />
+      </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/id_prompt_area"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:id="@+id/id_prompt_label_tv"
+                android:textSize="@dimen/sp_18"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_below="@+id/id_prompt_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/id_input_key_rl"
+
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_5"
+                    android:layout_height="300dp">
+
+                    <GridView
+                        android:id="@+id/id_grid_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="4"
+                        android:verticalSpacing="@dimen/dp_10"
+                        android:horizontalSpacing="@dimen/dp_5"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
