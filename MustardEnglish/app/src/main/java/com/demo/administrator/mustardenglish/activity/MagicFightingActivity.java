@@ -88,14 +88,25 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
         monsterMaxBlood = magicFightingPresenter.getMonsterBlood();
         id_monster_blood.setNumStars(monsterMaxBlood);
         monsterBloodShow();
+        initGame();
+    }
+    private void initGame(){
+        isGameOver =false;
+        isCurrentInputEnd =false;
+        cleanMagicTxt();
+        sentenceList.clear();
+        currentIndex = 0;
+        gameIndex = 0;
     }
     private void monsterBloodShow(){
         id_monster_blood.setRating(monsterMaxBlood);
     }
     private void setCurrentFinghtData(){
         startGame();
+
         if((currentListStartIndex+monsterMaxBlood)<sentenceAllList.size()){ //取得的数据已经未超出当前数据数量
             sentenceList.addAll(sentenceAllList.subList(currentListStartIndex,monsterMaxBlood));
+            currentListStartIndex = monsterMaxBlood;
             if(sentenceList == null || sentenceList.size() == 0){
                 Toast.makeText(this,getResources().getString(R.string.no_magic_str),Toast.LENGTH_SHORT).show();
                 return;
@@ -222,6 +233,9 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
     private void monsterDeadHandler(){
         propertyValuesHolder(id_monster_iv);
         setCurrentFinghtData();
+    }
+    private void cleanMagicTxt(){
+        id_magic_txt_label_tv.setText("");
     }
     private void nextLine(){
         String str = id_magic_txt_label_tv.getText().toString();
