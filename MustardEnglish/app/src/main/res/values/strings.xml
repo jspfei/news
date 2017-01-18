@@ -16,7 +16,15 @@
     <string-array name="branch_title">
         <item>在家中</item>
         <item>享受余暇时间</item>
-
+        <item>生病、受伤时</item>
+        <item>恋爱和结婚</item>
+        <item>在工作单位</item>
+        <item>电话</item>
+        <item>日期和时间</item>
+        <item>见面、分手时</item>
+        <item>随意的谈话</item>
+        <item>提醒、忠告</item>
+        <item>内心表白</item>
     </string-array>
 
     <string-array name="b_1">
@@ -32,5 +40,21 @@
         <item>订计划</item>
         <item>出门的时候</item>
         <item>看电影</item>
+        <item>去听音乐会</item>
+        <item>打高尔夫球</item>
+        <item>相识的人一起去喝酒</item>
+        <item>唱卡拉OK</item>
     </string-array>
+    <string-array name="b_3">
+        <item>请医生看病</item>
+        <item>陈述症状</item>
+    </string-array>
+    <string-array name="b_4">
+        <item>喜欢、爱上…</item>
+        <item>约会</item>
+        <item>表白</item>
+        <item>结婚</item>
+        <item>离婚</item>
+    </string-array>
+
 </resources>

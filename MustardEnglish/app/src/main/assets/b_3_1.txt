@@ -1,0 +1,22 @@
+Do you need a doctor?#用叫医生吗?
+Yes, I think so.#是的，请叫医生吧。
+Do you want me to get a doctor?#是的，请叫医生吧。
+Do you need any help?#需要帮忙吗?
+Please call an ambulance.#请叫救护车。
+We need an ambulance now.#请叫救护车。
+Please get an ambulance.#请叫救护车。
+I'd like to see a doctor.#我要看病。
+I'm not feeling well.#我觉得身体不舒服。
+Could you send me a doctor?#你能帮我请位医生吗?
+What's wrong with you?#你怎么啦?
+What's the matter?#你怎么啦?
+Is anything wrong?#你怎么啦?
+What are your symptoms?#是什么症状?
+Let me check your temperature.#量一下体温吧。
+Did you eat something unusual?#吃了什么不对劲的东西没有?
+Let me check your blood pressure.#量一下血压吧。
+Are you taking any medication regularly?#你常服用什么药?
+I'm not taking any medication.#我没服用任何药。
+Is that so?#是吗?
+What's wrong with me?#我哪儿不好?
+Is it serious?#严重吗?

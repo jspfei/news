@@ -1,0 +1,119 @@
+Are you feeling okay?#你不舒服吗?
+Do you feel all right?#你不舒服吗?
+What's wrong?#你怎么了?
+I'm not feeling well.#我觉得身体有点不对劲。
+Is anything wrong?#你怎么了?
+Are you okay?#你怎么了?
+What's the matter?#你怎么了?
+Is everything all right?#你怎么了?
+You look pale.#你的脸色真不好。
+You look pale.#Are you okay?#你的脸色很难看。没事吧?
+I guess I'm just tired.#我想可能是有点儿累了。
+You don't look well.#你看上去身体不太好。
+I don't feel well.#我觉得难受。
+Please sit down for a while.#你坐会儿吧。
+I'm not feeling well.#我觉得难受。
+You don't look well.#你好像不太舒服。
+I have a cold.#我感冒了。
+She passed out.#她昏过去了。
+I feel sick.#我觉得难受。
+I don't feel well.#我觉得难受。
+I feel bad.#我觉得难受。
+I have a stomachache.#我肚子疼。
+How long have you had it?#疼多长时间了?
+I have a stomachache.#我肚子疼。
+Did you eat too much?#是不是吃多了?
+My stomach hurts.#是不是吃多了?
+I have a dull pain.#隐隐作痛。
+I have a sharp pain.#钻心地疼。
+I have a throbbing pain.#一跳一跳地疼。
+I have a piercing pain.#我感到巨痛。
+I have a stabbing pain.#像针扎似地疼。
+I have diarrhea.#我拉肚子了。
+I have food poisoning.#我食物中毒了。
+I have high/low blood pressure.#血压高/低。
+What happened, sir?#你怎么了?
+I have a headache.#我头疼
+My head hurts.#我头疼。
+My head is pounding.#我头疼。
+I have a splitting headache.#我的头像裂了似地疼。
+I have a toothache.#我牙疼。
+When did it start?#什么时候开始的?
+My tooth hurts.#我头疼。
+My tooth is killing me.#我的牙疼死了。
+I feel dizzy.#我头晕目眩。
+I feel sluggish.#我头晕目眩。
+I feel tired.#我浑身没劲。
+I don't have any appetite.#我没有食欲。
+You should eat something.#那你也得吃点儿东西。
+I don't have much of an appetite these days.#最近我没什么食欲。
+I have a slight cold.#我有点儿感冒。
+I feel chilly.#我浑身发冷。
+Here, wear my jacket.#给，穿上我的夹克吧。
+I have a bad cold.#我得了重感冒。
+I have a stuffy nose.#鼻子堵了。
+I have a runny nose.#鼻子堵了。
+My nose is running.#我在流鼻涕。
+My nose won't stop running.#我在流鼻涕。
+I have a bit of a fever.#我有点儿发烧。
+I think I have a fever.#我好像发烧了。
+Let's check.#试试表。
+I have a high temperature.#我在发高烧。
+I feel like throwing up.#我想吐。
+I feel nauseous.#我想吐。
+Ouch!#好疼/好烫!
+Be careful!#小心点儿。
+It hurts!#好疼/好烫!
+It's itchy.#痒痒。 
+Ahchoo!#啊嚏!
+Bless you.#多保重.
+I broke my leg.#我腿骨折了
+What happened?#你怎么了?
+I broke my leg.#我腿骨折了。
+How long will the cast be on?#要打多长时间石膏?
+One more month.#还得有一个月。
+I burned my hand.#我把手给烫了。
+How did you burn your hand?#怎么烫着的?
+I sprained my ankle.#我崴脚了。
+How?#怎么弄的?
+I sprained it playing golf.#是打高尔夫球的时候崴的。
+I twisted my ankle.#我崴脚了。
+Well, I can call for help.#那，我叫人来帮忙。
+I caught a cold from you.#你把感冒传染给我了。
+I must stay in bed.#我必须静养。
+I have stiff shoulders.#我肩膀酸痛。
+My shoulders are stiff.#我肩膀酸痛。
+My eyes are tired.#我眼睛发酸。
+Is somebody hurt?#有谁受伤了?
+My fever has gone down.#我退烧了。
+I can't stop coughing.#我咳嗽不止。
+My throat's sore.#我嗓子疼。
+I have a sore throat.#我嗓子疼。
+It's bleeding.#我流血了。
+I've got a cut here.#我这儿割破了。
+I have a cut here.#我这儿割破了。
+It hurts.#好疼。
+I got stung by a bee.#我被蜜蜂蜇了。 
+Do I need an operation?#要动手术吗?
+I don't think that will be necessary.#我想没必要。
+Will I have to have an operation?#我想没必要。
+Will it take long?#要花很长时间吗?
+Can I take a bath?#我可以洗澡吗?
+Can I bathe?#我可以洗澡吗?
+Is it okay to drink?#我可以喝酒吗?
+Is it all right to drink?#我可以喝酒吗?
+May I drink?#我可以喝酒吗?
+Should I be hospitalized?#我一定要住院吗?
+Do you have a fever?#发烧吗?
+I don't know.#I don't have a thermometer.#不知道，我没有体温计。
+Do you have a high temperature?#发烧吗?
+I feel better.#我觉得好多了。
+How do you feel?#怎么样了?
+I feel better now.#Thank you.#我觉得好多了，谢谢。
+I don't feel any better.#我觉得没什么好转。
+I still don't feel well.#我觉得没什么好转。
+Are you alright again?#你的病好了吗?
+Are you well again?#你的病好了吗?
+Are you yourself again?#你的病好了吗?
+Are you back to normal again?#你的病好了吗?
+He passed away.#他去世了。

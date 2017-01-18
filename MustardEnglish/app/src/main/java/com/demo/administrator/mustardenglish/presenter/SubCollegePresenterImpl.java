@@ -39,6 +39,12 @@ public class SubCollegePresenterImpl implements SubCollegePresenter {
         }else if(branch_class.equals("b_2")){
             branchs = context.getResources().getStringArray(R.array.b_2);
         }
+        else if(branch_class.equals("b_3")){
+            branchs = context.getResources().getStringArray(R.array.b_3);
+        }
+        else if(branch_class.equals("b_4")){
+            branchs = context.getResources().getStringArray(R.array.b_4);
+        }
         return branchs;
     }
 }
