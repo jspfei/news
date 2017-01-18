@@ -13,6 +13,20 @@
     <string name="restart_game">重新开始</string>
     <string name="magic_fight">魔法战斗</string>
     <string name="monster_die_str">怪物死亡</string>
+    <string name="game_over">游戏通关！</string>
+
+    <string-array name="resource_id"><!-- 对一资源名 b_2_1 开始-->
+        <item>b_1_1</item>
+        <item>b_1_2</item>
+        <item>b_1_3</item>
+        <item>b_1_4</item>
+        <item>b_1_5</item>
+        <item>b_1_6</item>
+        <item>b_2_1</item>
+        <item>b_2_2</item>
+        <item>b_2_3</item>
+        <item>b_2_4</item>
+    </string-array>
     <string-array name="branch_title">
         <item>在家中</item>
         <item>享受余暇时间</item>

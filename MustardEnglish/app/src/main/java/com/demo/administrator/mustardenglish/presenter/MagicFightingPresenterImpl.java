@@ -1,12 +1,16 @@
 package com.demo.administrator.mustardenglish.presenter;
 
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 
 import com.demo.administrator.mustardenglish.R;
 import com.demo.administrator.mustardenglish.bean.Sentence;
 import com.demo.administrator.mustardenglish.handler.AsyncReadTxtHandler;
+import com.demo.administrator.mustardenglish.handler.RescoureDataHandler;
 import com.demo.administrator.mustardenglish.handler.SentenceDataHandler;
 import com.demo.administrator.mustardenglish.view.MagicFightingView;
 
@@ -59,6 +63,28 @@ public class MagicFightingPresenterImpl implements MagicFightingPresenter {
         else{
             magicFightingView.showToast(context.getResources().getString(R.string.again_str));
         }
+    }
+    @Override
+    public void propertyValuesHolder(View view)
+    {
+        PropertyValuesHolder pvhX = PropertyValuesHolder.ofFloat("alpha", 1f,
+                0f, 1f);
+        PropertyValuesHolder pvhY = PropertyValuesHolder.ofFloat("scaleX", 1f,
+                0, 1f);
+        PropertyValuesHolder pvhZ = PropertyValuesHolder.ofFloat("scaleY", 1f,
+                0, 1f);
+        ObjectAnimator.ofPropertyValuesHolder(view, pvhX, pvhY,pvhZ).setDuration(1000).start();
+    }
+
+    @Override
+    public void showMonsterDead() {
+        magicFightingView.showToast(context.getResources().getString(R.string.monster_die_str));
+        magicFightingView.monsterDeadHandler();
+    }
+
+    @Override
+    public List<String> getAllRecoursesIds() {
+        return RescoureDataHandler.getShuffleRescoureList(context);
     }
 
     //生成怪物血量 4 -7

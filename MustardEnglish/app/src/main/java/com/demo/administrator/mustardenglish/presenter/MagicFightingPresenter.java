@@ -1,5 +1,7 @@
 package com.demo.administrator.mustardenglish.presenter;
 
+import android.view.View;
+
 import com.demo.administrator.mustardenglish.bean.Sentence;
 
 import java.util.List;
@@ -14,4 +16,7 @@ public interface MagicFightingPresenter {
    List<String>  getShuffleSentenceList(List<String> list);
    void validateSentence(List<String> list, String txt,int index);
    int getMonsterBlood();
+   void propertyValuesHolder(View view);
+   void showMonsterDead();
+   List<String> getAllRecoursesIds();
 }

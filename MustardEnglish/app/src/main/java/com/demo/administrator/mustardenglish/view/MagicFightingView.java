@@ -15,4 +15,5 @@ public interface MagicFightingView {
     void setCurrentInputIndex(int i);
     void setCurrentInputEnd(Boolean flag);
     void nextMagicTxt();
+    void monsterDeadHandler();
 }

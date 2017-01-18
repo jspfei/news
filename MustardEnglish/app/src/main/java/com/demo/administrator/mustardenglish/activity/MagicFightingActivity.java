@@ -51,11 +51,14 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
     private RatingBar id_monster_blood;
     private int currentListStartIndex=0;//在sentenceList中取出数据的开始下标
     private ImageView id_monster_iv;//怪物
+    private List<String> allRescoureIdList = null; //所有资源ID List 打乱顺序
+    private int currentRescourseIndex = 0; //当前应用的资源下标；
     @Override
     public void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_magic_fight);
         magicFightingPresenter = new MagicFightingPresenterImpl(this,this);
+        allRescoureIdList = magicFightingPresenter.getAllRecoursesIds();
         initView();
         initData();
         readData();
@@ -76,13 +79,13 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
     }
 
     private void readData(){
-        magicFightingPresenter.readTxt("b_1_1");//"1_1.txt"
+        magicFightingPresenter.readTxt(allRescoureIdList.get(currentRescourseIndex));//"1_1.txt"
     }
 
     @Override
     public void setSentenceList(List<Sentence> list) {
         sentenceAllList.addAll(list);
-        setCurrentFinghtData();
+        setCurrentFightData();
     }
     private void startGame(){
         monsterMaxBlood = magicFightingPresenter.getMonsterBlood();
@@ -94,28 +97,38 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
         isGameOver =false;
         isCurrentInputEnd =false;
         cleanMagicTxt();
-        sentenceList.clear();
+        sentenceList = new ArrayList<Sentence>();
         currentIndex = 0;
         gameIndex = 0;
     }
     private void monsterBloodShow(){
         id_monster_blood.setRating(monsterMaxBlood);
     }
-    private void setCurrentFinghtData(){
+    private void setCurrentFightData(){
         startGame();
 
         if((currentListStartIndex+monsterMaxBlood)<sentenceAllList.size()){ //取得的数据已经未超出当前数据数量
-            sentenceList.addAll(sentenceAllList.subList(currentListStartIndex,monsterMaxBlood));
-            currentListStartIndex = monsterMaxBlood;
-            if(sentenceList == null || sentenceList.size() == 0){
+            sentenceList.addAll(sentenceAllList.subList(currentListStartIndex,currentListStartIndex+monsterMaxBlood));
+            currentListStartIndex = currentListStartIndex+ monsterMaxBlood;
+              if(sentenceList == null || sentenceList.size() == 0){
                 Toast.makeText(this,getResources().getString(R.string.no_magic_str),Toast.LENGTH_SHORT).show();
                 return;
             }
             gameIndex = 0;
             setInitializationGame(gameIndex);
-        }else{
-            //加载洗一张的数量
-            magicFightingPresenter.readTxt("b_1_2");//"1_1.txt"
+        }else if((currentListStartIndex + monsterMaxBlood)-sentenceAllList.size()>=0){
+            currentRescourseIndex ++ ;
+            if(currentRescourseIndex == allRescoureIdList.size()){
+                showToast(getResources().getString(R.string.game_over));
+                return;
+            }
+            if((currentListStartIndex+monsterMaxBlood)-sentenceAllList.size()==0){
+                currentListStartIndex = sentenceAllList.size();
+            }else{
+                int index = (currentListStartIndex+monsterMaxBlood)-sentenceAllList.size();
+                currentListStartIndex = sentenceAllList.size()-index;
+            }
+            magicFightingPresenter.readTxt(allRescoureIdList.get(currentRescourseIndex));//"1_1.txt"
         }
     }
 
@@ -140,7 +153,7 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
 
                     }
                 }else{
-                    //
+                    initGame();
                 }
             }
         });
@@ -179,16 +192,7 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
         isCurrentInputEnd = flag;
         //下一個怪物出場
     }
-    public void propertyValuesHolder(View view)
-    {
-        PropertyValuesHolder pvhX = PropertyValuesHolder.ofFloat("alpha", 1f,
-                0f, 1f);
-        PropertyValuesHolder pvhY = PropertyValuesHolder.ofFloat("scaleX", 1f,
-                0, 1f);
-        PropertyValuesHolder pvhZ = PropertyValuesHolder.ofFloat("scaleY", 1f,
-                0, 1f);
-        ObjectAnimator.ofPropertyValuesHolder(view, pvhX, pvhY,pvhZ).setDuration(1000).start();
-    }
+
     public void verticalRun( final  View view)
     {
         ValueAnimator animator = ValueAnimator.ofFloat(0, view.getX()-
@@ -225,14 +229,14 @@ public class MagicFightingActivity extends Activity implements MagicFightingView
             }else
             {
                 isGameOver = true;
-                showToast(getResources().getString(R.string.monster_die_str));
-                monsterDeadHandler();
+                magicFightingPresenter.showMonsterDead();
             }
         }
     }
-    private void monsterDeadHandler(){
-        propertyValuesHolder(id_monster_iv);
-        setCurrentFinghtData();
+    @Override
+    public void monsterDeadHandler(){
+        magicFightingPresenter.propertyValuesHolder(id_monster_iv);
+        setCurrentFightData();
     }
     private void cleanMagicTxt(){
         id_magic_txt_label_tv.setText("");
